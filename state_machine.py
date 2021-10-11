@@ -11,3 +11,11 @@ class StateMachine:
         self.current_state = new_state()
         self.current_state.get_state_machine(state_machine=self)
         self.current_state.enter_state()
+
+        
+def start():
+    my_state_machine = StateMachine(IdleState)
+
+
+if __name__ == '__main__':
+    start()
